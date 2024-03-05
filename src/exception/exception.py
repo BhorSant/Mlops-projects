@@ -1,16 +1,18 @@
-import sys
+import logging
+import os
+from datetime import datetime
 
-class Customeexception(Exception):
-    def __init__(self,error_message,error_details:sys):
-        self.error_message=error_message
-        _,_,exc_tb=error_details.exc_info()
-        pass
+LOG_FILE=f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
 
-    def __str__(self):
-        pass
+log_path=os.path.join(os.getcwd(),"logs")
 
-if __name__ == "__main__":
-    try:
-        a = 1/0
-    except Exception as e:
-        raise Customeexception(e,sys)
+os.makedirs(log_path,exist_ok=True)
+
+LOG_FILEPATH=os.path.join(log_path,LOG_FILE)
+
+
+logging.basicConfig(level=logging.INFO, 
+                    filename=LOG_FILEPATH,
+                    format="[%(asctime)s] %(lineno)d %(name)s - %(levelname)s - %(message)s"
+                    
+)
