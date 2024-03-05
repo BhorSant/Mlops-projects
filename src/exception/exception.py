@@ -1,18 +1,19 @@
-import logging
-import os
-from datetime import datetime
+import sys
 
-LOG_FILE=f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
+class customexception(Exception):
+    def __init__(self,error_message,error_details:sys):
+        self.error_message=error_message
+        _,_,exc_tb=error_details.exc_info()
+        print(exc_tb)
+        self.lineno=exc_tb.tb_lineno
+        self.file_name=exc_tb.tb_frame.f_code.co_fillname
 
-log_path=os.path.join(os.getcwd(),"logs")
+    def __str__(self):
+        return "Error occured in python script name [{0}] line number [{1}] error message [{2}]".format(
+            self.file_name,self.lineno,str(self.error_message))
 
-os.makedirs(log_path,exist_ok=True)
-
-LOG_FILEPATH=os.path.join(log_path,LOG_FILE)
-
-
-logging.basicConfig(level=logging.INFO, 
-                    filename=LOG_FILEPATH,
-                    format="[%(asctime)s] %(lineno)d %(name)s - %(levelname)s - %(message)s"
-                    
-)
+if __name__ == "__main__":
+    try:
+        a=1/0
+    except Exception as e:
+        raise customexception(e,sys)
