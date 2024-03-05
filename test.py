@@ -1,2 +1,2 @@
-from src.logger.logging import logging
-logging.info("THis is myb testing")
+from src.pipeline.training_pipeline import training_pipeline
+training_pipeline.info("THis is myb testing")
