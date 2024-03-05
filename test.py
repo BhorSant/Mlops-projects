@@ -1,2 +1,2 @@
-from src.pipeline.training_pipeline import training_pipeline
-training_pipeline.info("THis is myb testing")
+from src.pipeline.prediction_pipeline import prediction_pipeline
+prediction_pipeline.info("THis is myb testing")

@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/Mlops-projects/mlruns/0/5d2f150a0a3b4763b5bc7b849162815e/artifacts
+end_time: 1709653567349
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 5d2f150a0a3b4763b5bc7b849162815e
+run_name: angry-crab-182
+run_uuid: 5d2f150a0a3b4763b5bc7b849162815e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709653565392
+status: 3
+tags: []
+user_id: codespace

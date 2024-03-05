@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/Mlops-projects/mlruns/0/8dbab4dce4b046c9afc293e44d83a780/artifacts
+end_time: 1709653434450
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8dbab4dce4b046c9afc293e44d83a780
+run_name: luminous-bat-92
+run_uuid: 8dbab4dce4b046c9afc293e44d83a780
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709653432530
+status: 3
+tags: []
+user_id: codespace

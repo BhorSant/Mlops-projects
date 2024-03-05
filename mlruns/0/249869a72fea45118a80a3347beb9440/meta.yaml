@@ -1,0 +1,15 @@
+artifact_uri: file:///workspaces/Mlops-projects/mlruns/0/249869a72fea45118a80a3347beb9440/artifacts
+end_time: 1709653675964
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 249869a72fea45118a80a3347beb9440
+run_name: amusing-carp-333
+run_uuid: 249869a72fea45118a80a3347beb9440
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709653674021
+status: 3
+tags: []
+user_id: codespace
